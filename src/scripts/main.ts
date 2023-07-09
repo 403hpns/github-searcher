@@ -16,14 +16,6 @@ const clearResultsButton = document.querySelector(
   ".form__button--clear-results"
 );
 
-window.addEventListener("keydown", (key) => {
-  if (key.code === "Enter") {
-    if (document.activeElement === searchInput && searchInput?.value !== "") {
-      (searchUserBtn as HTMLElement).focus();
-    }
-  }
-});
-
 buttonsArray.forEach((button) =>
   button.addEventListener("click", (ev) => {
     ev.preventDefault();
