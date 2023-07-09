@@ -6,7 +6,38 @@
     <title>GitHub Searcher</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <h1 class="container__header">GitHub Searcher</h1>
+
+        <div class="form">
+          <input
+            class="form__input"
+            placeholder="Type a GitHub username or public repository name"
+          />
+
+          <div class="form__button-wrapper">
+            <button class="form__button form__button--search-user">
+              Search user
+            </button>
+            <button class="form__button form__button--search-repo">
+              Search repo
+            </button>
+          </div>
+        </div>
+
+        <div class="results hidden">
+          <h2 class="results__heading">Results</h2>
+          <div class="results__content"></div>
+          <button class="form__button form__button--clear-results">
+            Clear results
+          </button>
+        </div>
+
+        <img class="image-loader hidden" src="/loader.svg" />
+        <h2 class="no-results hidden">No results found</h2>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
