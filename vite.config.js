@@ -1,8 +1,7 @@
 /** @type {import('vite').UserConfig} */
-export default defineConfig({
+export default {
   root: "./",
   build: {
     outDir: "dist",
   },
-  publicDir: "assets",
-});
+};
