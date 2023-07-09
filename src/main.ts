@@ -1,7 +1,4 @@
-import { create } from "domain";
 import "./styles/style.scss";
-
-const container = document.querySelector<HTMLDivElement>(".container");
 
 const buttonsArray =
   document.querySelectorAll<HTMLButtonElement>(".form__button");
@@ -80,6 +77,7 @@ const fetchUserDataFromGitHub = async (userName: string) => {
       Following: following,
       "Public repositories": public_repos,
       "Created at": created_at,
+      "Avatar url": avatar_url,
     });
 
     toggleLoader();
